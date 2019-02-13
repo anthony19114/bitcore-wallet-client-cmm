@@ -1,0 +1,137 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "bitcore-wallet-client-cmm@1.0.0",
+        "scope": null,
+        "escapedName": "bitcore-wallet-client-cmm",
+        "name": "bitcore-wallet-client-cmm",
+        "rawSpec": "1.0.0",
+        "spec": "1.0.0",
+        "type": "version"
+      },
+      "/home/hellomoto/copay"
+    ]
+  ],
+  "_from": "bitcore-wallet-client-cmm@^1.0.0",
+  "_id": "bitcore-wallet-client-cmm@1.0.1",
+  "_inBundle": false,
+  "_inCache": true,
+  "_integrity": "sha512-LTXbz07LtDN+4buxehj9dpbLDT+TWoq3ADlLK4JTAjNFzPVeYvpl2jK4xi1AzFJOYvrCbkWJReCU69h7CM15xw==",
+  "_location": "/bitcore-wallet-client-cmm",
+  "_nodeVersion": "8.5.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/bitcore-wallet-client-6.2.1.tgz_1506954646857_0.32837888854555786"
+  },
+  "_npmUser": {
+    "name": "ematiu",
+    "email": "ematiu@gmail.com"
+  },
+  "_npmVersion": "5.3.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "bitcore-wallet-client-cmm@^1.0.0",
+    "name": "bitcore-wallet-client-cmm",
+    "escapedName": "bitcore-wallet-client-cmm",
+    "rawSpec": "^1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/bitcore-wallet-client-cmm/-/bitcore-wallet-client-btcz-1.0.1.tgz",
+  "_shasum": "3ef1d52c075536b9918b1cbb7df22a5efb1d0203",
+  "_shrinkwrap": null,
+  "_spec": "bitcore-wallet-client-cmm@^1.0.0",
+  "_where": "/Users/aclark/Projects/CMMPay",
+  "author": {
+    "name": "BitPay Inc"
+  },
+  "bugs": {
+    "url": "https://github.com/bitpay/bitcore-wallet-client/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "async": "^0.9.0",
+    "bip38": "^1.3.0",
+    "bitcore-lib-cmm": "^1.0.0",
+    "bitcore-lib-cash": "git+https://github.com/bitpay/bitcore-lib.git#cash",
+    "bitcore-mnemonic": "^1.2.2",
+    "bitcore-payment-protocol": "^1.2.2",
+    "json-stable-stringify": "^1.0.0",
+    "lodash": "^3.3.1",
+    "preconditions": "^1.0.8",
+    "sjcl": "1.0.3",
+    "superagent": "^3.4.1"
+  },
+  "deprecated": false,
+  "description": "Client for bitcore-wallet-service",
+  "devDependencies": {
+    "bitcore-wallet-service": "2.1.0",
+    "browserify": "^13.1.0",
+    "chai": "^1.9.1",
+    "coveralls": "^2.11.2",
+    "grunt": "~0.4.0",
+    "grunt-jsdox": "^0.1.7",
+    "istanbul": "*",
+    "mocha": "^1.18.2",
+    "sinon": "^1.10.3",
+    "supertest": "^3.0.0",
+    "tingodb": "^0.3.4",
+    "uglify": "^0.1.1",
+    "uuid": "^2.0.1"
+  },
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-zKUkmWSPzpSoPk88KZD1kYXVM5aNskdVpFiDkyubezPcHjFc40Xyim7I3LIiM8aFU+byvAjANQ6xEyhHdgTFwA==",
+    "shasum": "2a141c1564d808a57bcba6ae45908fa34360c732",
+    "tarball": "https://registry.npmjs.org/bitcore-wallet-client/-/bitcore-wallet-client-6.2.1.tgz"
+  },
+  "engine": "node >= 8.0.0",
+  "gitHead": "782bf6f86c3967fa488aa75bb5f590a8741eaa3a",
+  "homepage": "https://github.com/bitpay/bitcore-wallet-client#readme",
+  "keywords": [
+    "bitcoin",
+    "copay",
+    "multisig",
+    "wallet",
+    "client",
+    "bitcore",
+    "BWS",
+    "BWC"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "cmgustavo",
+      "email": "cmgustavo83@gmail.com"
+    },
+    {
+      "name": "ematiu",
+      "email": "ematiu@gmail.com"
+    },
+    {
+      "name": "isocolsky",
+      "email": "jungans@gmail.com"
+    }
+  ],
+  "name": "bitcore-wallet-client-cmm",
+  "optionalDependencies": {},
+  "repository": {
+    "url": "git+ssh://git@github.com/anthony19114/bitcore-wallet-client-cmm.git",
+    "type": "git"
+  },
+  "scripts": {
+    "coverage": "istanbul cover ./node_modules/.bin/_mocha -- --reporter spec test",
+    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "docs": "jsdox lib/* lib/common lib/errors -o docs && cat README.header.md  docs/*.md LICENSE > README.md",
+    "start": "node app.js",
+    "test": "mocha"
+  },
+  "version": "1.0.1"
+}
